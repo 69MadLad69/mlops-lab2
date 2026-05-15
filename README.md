@@ -62,8 +62,8 @@ ml-api-lab2/
 ### 1. Клонування та віртуальне оточення
 
 ```bash
-git clone https://github.com/69MadLad69/<REPO>.git
-cd <REPO>
+git clone https://github.com/69MadLad69/mlops-lab2.git
+cd mlops-lab2
 
 python -m venv .venv #py -3.11 -m venv .venv
 # Linux / macOS:
@@ -94,6 +94,8 @@ uvicorn app.main:app --reload
 ```
 
 Сервіс буде доступний за адресою <http://localhost:8000>:
+
+**Швидке посилання на Swagger UI:**<http://localhost:8000/docs>
 
 - `GET /` — статус сервісу;
 - `GET /health` — health check;
@@ -192,17 +194,19 @@ curl -X POST http://localhost:8000/predict \
 
 ## Посилання на деплой
 
-**Публічний сервіс на Render:** <https://ml-api-69MadLad69.onrender.com>
+**Публічний сервіс на Render:** <https://mlops-lab2-ed3g.onrender.com>
 
 Швидка перевірка живого сервісу:
 
 ```bash
-curl https://ml-api-69MadLad69.onrender.com/health
+curl https://mlops-lab2-ed3g.onrender.com/health
 
-curl -X POST https://ml-api-69MadLad69.onrender.com/predict \
+curl -X POST https://mlops-lab2-ed3g.onrender.com/predict \
   -H "Content-Type: application/json" \
   -d '{"sepal_length": 6.3, "sepal_width": 2.9, "petal_length": 5.6, "petal_width": 1.8}'
 ```
+
+**Швидке посилання на Swagger UI:**<https://mlops-lab2-ed3g.onrender.com/docs>
 
 ## Автор
 Студент групи ТР-51мп Авраменко Олег
