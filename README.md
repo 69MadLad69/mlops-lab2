@@ -1,6 +1,6 @@
 # Iris ML API — Лабораторна робота №2
 
-![CI](https://github.com/69MadLad69/<REPO>/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/69MadLad69/mlops-lab2/actions/workflows/ci.yml/badge.svg)
 
 ## Опис проєкту
 
