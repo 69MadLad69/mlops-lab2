@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Віртуальні оточення
+.venv/
+venv/
+env/
+ENV/
+
+# Тестування
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Артефакти моделей (генеруються python -m ml.train)
+model.joblib
+
+# Локальні змінні середовища
+.env
